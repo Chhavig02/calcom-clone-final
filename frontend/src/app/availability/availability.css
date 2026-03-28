@@ -1,0 +1,116 @@
+.availability-page { min-height: 100vh; background: #f9fafb; }
+.main-content { padding: 40px 0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.loading-state, .loading-container { text-align: center; padding: 64px; color: #6b7280; }
+
+.page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.page-title { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+.page-subtitle { color: #6b7280; font-size: 14px; }
+
+.btn-save-main {
+  background: #111827;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.btn-save-main:hover { background: #1f2937; }
+.btn-save-main:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.success-banner {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #16a34a;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.availability-container { max-width: 700px; }
+
+.availability-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.card-header h3 { font-size: 16px; font-weight: 600; margin-bottom: 2px; }
+.card-header p { font-size: 13px; color: #6b7280; }
+
+.days-list { display: flex; flex-direction: column; }
+
+.day-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background 0.15s;
+}
+
+.day-row:last-child { border-bottom: none; }
+.day-row:hover { background: #fafafa; }
+.day-disabled { opacity: 0.5; }
+
+.day-info { display: flex; align-items: center; gap: 14px; }
+
+/* Toggle switch */
+.toggle-label { display: flex; align-items: center; cursor: pointer; }
+.toggle-input { display: none; }
+
+.toggle-switch {
+  width: 36px;
+  height: 20px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.toggle-switch::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.toggle-input:checked + .toggle-switch { background: #111827; }
+.toggle-input:checked + .toggle-switch::after { transform: translateX(16px); }
+
+.day-name { font-size: 14px; font-weight: 500; color: #374151; width: 90px; }
+
+.time-inputs { display: flex; align-items: center; gap: 8px; }
+
+.time-inputs input[type="time"] {
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.time-inputs input[type="time"]:focus { border-color: #111827; }
+.time-separator { color: #9ca3af; font-size: 16px; }
+
+.unavailable-label { font-size: 14px; color: #9ca3af; }

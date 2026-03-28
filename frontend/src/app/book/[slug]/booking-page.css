@@ -1,0 +1,240 @@
+.booking-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--subtle);
+  padding: 24px;
+}
+
+.booking-card {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  min-height: 500px;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.booking-sidebar {
+  width: 350px;
+  border-right: 1px solid var(--border);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.host-avatar {
+  width: 48px;
+  height: 48px;
+  background: var(--subtle);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.host-name {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.event-title-booking {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.event-meta {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.event-description-booking {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.booking-main {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.calendar-header-main h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.calendar-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.current-month {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-arrows {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--muted);
+}
+
+.calendar-grid-7 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+}
+
+.calendar-grid-7 span {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    padding: 8px;
+}
+
+.calendar-cell {
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.calendar-cell:hover:not(.unavailable) {
+  background: var(--subtle);
+}
+
+.calendar-cell.unavailable {
+  color: #d1d5db;
+  font-weight: 400;
+  cursor: not-allowed;
+}
+
+.calendar-cell.today {
+    color: #2563eb;
+}
+
+.calendar-cell.selected-cell {
+    background: var(--brand);
+    color: white;
+}
+
+.avail-dot {
+    width: 4px;
+    height: 4px;
+    background: var(--muted);
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+}
+
+.time-slot-btn {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  background: var(--background);
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.time-slot-btn:hover {
+  border-color: var(--brand);
+  background: var(--subtle);
+}
+
+.time-slot-btn.selected {
+  background: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label { font-size: 14px; font-weight: 500; }
+.form-group input { 
+  padding: 10px; 
+  border: 1px solid var(--border); 
+  border-radius: 8px;
+}
+
+.btn-confirm {
+  margin-top: 16px;
+  background: var(--brand);
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn-confirm:disabled { opacity: 0.5; }
+
+.loading-container, .error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  color: var(--muted);
+}

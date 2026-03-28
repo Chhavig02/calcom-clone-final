@@ -1,0 +1,293 @@
+.landing-page {
+  background-color: var(--background);
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -0.04em;
+}
+
+.section-desc {
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto 48px;
+  line-height: 1.5;
+}
+
+.badge-pill {
+    display: inline-block;
+    background: var(--subtle);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid var(--border);
+    margin-bottom: 24px;
+}
+
+/* Trusted By Section */
+.trusted-by {
+  padding: 48px 0;
+  border-bottom: 1px solid var(--border);
+  background-color: white;
+}
+
+.trusted-label {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 32px;
+}
+
+.logo-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  opacity: 0.6;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: #64748b;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-color: var(--subtle);
+  border-top: 1px solid var(--border);
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.how-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.2s;
+}
+
+.how-card:hover {
+    transform: translateY(-4px);
+}
+
+.how-number {
+  font-size: 12px;
+  font-weight: 800;
+  color: #cbd5e1;
+}
+
+.how-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.how-card p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.how-img-placeholder {
+  height: 200px;
+  background: #f8fafc;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    box-shadow: var(--shadow-sm);
+}
+
+.availability-mock {
+    flex-direction: column;
+    padding: 20px;
+    gap: 12px;
+}
+
+.availability-mock .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.meeting-mock {
+    gap: 16px;
+}
+
+.meet-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.how-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Benefits Section */
+.benefits {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-color: white;
+  border-top: 1px solid var(--border);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.benefit-card {
+  background: var(--subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.benefit-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.benefit-card p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.benefit-img {
+    height: 240px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-top: 24px;
+    padding: 32px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.buffer-mock {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.buffer-mock label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.select-mock {
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.slug-mock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.slug-pill {
+    padding: 4px 16px;
+    background: #f1f5f9;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.slug-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    width: 240px;
+}
+
+.avatar-sm {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fdf2f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.pill-xs {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    background: var(--subtle);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.landing-footer {
+  padding: 48px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}

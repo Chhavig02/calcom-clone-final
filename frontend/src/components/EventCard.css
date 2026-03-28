@@ -1,0 +1,116 @@
+.event-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+
+.event-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.event-card-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+
+.event-card-info {
+  flex: 1;
+}
+
+.event-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 2px;
+}
+
+.event-card-slug {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.event-card-description {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.event-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.duration-badge {
+  font-size: 13px;
+  color: #374151;
+  background: #f3f4f6;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.status-badge {
+  font-size: 12px;
+  color: #22c55e;
+  font-weight: 500;
+}
+
+.event-card-footer {
+  display: flex;
+  gap: 8px;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-card-action {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  color: #374151;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.15s;
+}
+
+.btn-card-action:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.btn-delete {
+  color: #ef4444;
+  border-color: #fecaca;
+}
+
+.btn-delete:hover {
+  background: #fef2f2;
+  border-color: #f87171;
+}
+
+/* Legacy compatibility */
+.btn-secondary { background: white; border: 1px solid #e5e7eb; }
+.btn-sm { padding: 6px 12px; font-size: 13px; border-radius: 6px; }

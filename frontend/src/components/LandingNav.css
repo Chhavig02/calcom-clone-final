@@ -1,0 +1,63 @@
+.landing-nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  background: var(--background);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.landing-nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.landing-nav-logo .logo-text {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.landing-nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-item {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-item:hover {
+  color: var(--foreground);
+}
+
+.nav-item .chevron {
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.landing-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.sign-in {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.get-started {
+  padding: 8px 16px;
+  border-radius: 8px;
+}

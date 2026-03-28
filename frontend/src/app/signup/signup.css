@@ -1,0 +1,410 @@
+.signup-page {
+  display: flex;
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.signup-left {
+  flex: 0 0 480px;
+  background: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 48px 32px;
+  border-right: 1px solid #e5e7eb;
+  min-height: 100vh;
+}
+
+.signup-form-container {
+  width: 100%;
+  max-width: 360px;
+}
+
+.signup-logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #111827;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.signup-header {
+  margin-bottom: 28px;
+}
+
+.signup-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.signup-header p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.data-region {
+  margin-bottom: 24px;
+}
+
+.data-region label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+  color: #111827;
+  cursor: pointer;
+}
+
+.divider-line {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 24px 0;
+}
+
+.btn-google-signup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background 0.2s;
+}
+
+.btn-google-signup:hover {
+  background: #1f2937;
+}
+
+.or-divider {
+  text-align: center;
+  position: relative;
+  margin: 16px 0;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.or-divider::before, .or-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 44%;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.or-divider::before { left: 0; }
+.or-divider::after { right: 0; }
+
+.btn-email-signup {
+  width: 100%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-email-signup:hover {
+  background: #f9fafb;
+}
+
+.saml-link {
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 12px;
+}
+
+.saml-link a {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.signin-prompt {
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 24px;
+}
+
+.signin-prompt a {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #111827;
+}
+
+.username-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.username-wrapper span {
+  padding: 10px 12px;
+  background: #f9fafb;
+  color: #6b7280;
+  font-size: 14px;
+  border-right: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.username-wrapper input {
+  border: none;
+  border-radius: 0;
+  flex: 1;
+}
+
+.username-wrapper input:focus {
+  border-color: transparent;
+}
+
+.btn-submit {
+  width: 100%;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover {
+  background: #1f2937;
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-banner {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Right side */
+.signup-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  background: #f9fafb;
+}
+
+.signup-illustration {
+  max-width: 500px;
+  width: 100%;
+}
+
+.rating-badges {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  justify-content: center;
+}
+
+.badge-item {
+  text-align: center;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.badge-item .stars {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.badge-item strong {
+  color: #111827;
+  font-size: 20px;
+  display: block;
+}
+
+.booking-preview-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  margin-bottom: 24px;
+}
+
+.preview-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.preview-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e0f2fe;
+  color: #0284c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.preview-name {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.preview-event {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.preview-desc {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.preview-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.preview-calendar-header {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.preview-time-cols {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.preview-time-cols > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.day-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.preview-time-cols button {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.preview-time-cols button.selected-time {
+  background: #111827;
+  color: white;
+  border-color: #111827;
+}
+
+.features-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.feature-item {
+  text-align: center;
+}
