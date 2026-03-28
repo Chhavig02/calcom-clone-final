@@ -19,7 +19,7 @@ const UserSchema = new Schema<IUser>({
 });
 
 // Hash password before saving - using the no-callback pattern
-UserSchema.pre('save', async function () {
+UserSchema.pre('save', async function (this: IUser) {
   if (!this.isModified('password')) return;
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password as string, salt);
