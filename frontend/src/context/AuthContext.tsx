@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
-import { useRouter } from 'next/navigation';
+
 
 const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 

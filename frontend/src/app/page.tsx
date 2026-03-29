@@ -37,7 +37,7 @@ export default function LandingPage() {
                 <div className="how-card">
                   <div className="how-number">01</div>
                   <h3>Connect your calendar</h3>
-                  <p>We'll handle all the cross-referencing, so you don't have to worry about double bookings.</p>
+                  <p>We&apos;ll handle all the cross-referencing, so you don&apos;t have to worry about double bookings.</p>
                   <div className="how-img-placeholder">
                      <div className="inner-circle">Cal.com</div>
                   </div>
@@ -100,7 +100,7 @@ export default function LandingPage() {
                 
                 <div className="benefit-card large">
                   <h3>Stand out with a custom booking link</h3>
-                  <p>Customize your booking link so it's short and easy to remember for your bookers. No more long, complicated links one can easily forget.</p>
+                  <p>Customize your booking link so it&apos;s short and easy to remember for your bookers. No more long, complicated links one can easily forget.</p>
                   <div className="benefit-img slug-mock-container">
                      <div className="slug-pill">cal.com/bailey</div>
                      <div className="slug-card">

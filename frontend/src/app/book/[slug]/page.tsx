@@ -7,7 +7,9 @@ import './booking-page.css';
 
 export default function PublicBookingPage() {
   const { slug } = useParams();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [eventType, setEventType] = useState<any>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [availability, setAvailability] = useState<any[]>([]);
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
@@ -21,6 +23,7 @@ export default function PublicBookingPage() {
     const loadData = async () => {
       try {
         const events = await fetchEventTypes();
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const event = events.find((e: any) => e.slug === slug);
         setEventType(event);
 
@@ -44,7 +47,7 @@ export default function PublicBookingPage() {
     if (!dayAvail) return [];
 
     const slots = [];
-    let current = new Date(date);
+    const current = new Date(date);
     const [startH, startM] = dayAvail.startTime.split(':').map(Number);
     const [endH, endM] = dayAvail.endTime.split(':').map(Number);
     

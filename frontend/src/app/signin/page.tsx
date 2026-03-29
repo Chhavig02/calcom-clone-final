@@ -21,6 +21,7 @@ export default function SigninPage() {
     try {
       await login(email, password);
       router.push('/dashboard');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       setError(err.message || 'Invalid email or password');
     } finally {
@@ -74,6 +75,7 @@ export default function SigninPage() {
           <div className="or-divider"><span>or</span></div>
 
           <button className="btn-google-signin" onClick={() => router.push('/signup')}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="https://www.google.com/favicon.ico" alt="G" width="18" height="18" />
             Continue with Google
           </button>

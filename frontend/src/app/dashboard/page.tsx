@@ -13,6 +13,7 @@ const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 export default function Dashboard() {
   const { user, loading: authLoading, getAuthHeaders } = useAuth();
   const router = useRouter();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [eventTypes, setEventTypes] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,6 +35,7 @@ export default function Dashboard() {
       .finally(() => setLoading(false));
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (user) loadData();
   }, [user]);
@@ -53,6 +55,7 @@ export default function Dashboard() {
       setIsModalOpen(false);
       setNewType({ title: '', description: '', duration: 30, slug: '', location: 'Video call' });
       loadData();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       setError(err.message || 'Failed to create event type');
     } finally {

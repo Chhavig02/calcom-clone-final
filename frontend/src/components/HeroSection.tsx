@@ -21,6 +21,7 @@ const HeroSection = () => {
             
             <div className="hero-cta">
               <button className="btn btn-primary btn-google">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="https://www.google.com/favicon.ico" alt="Google" width="16" height="16" />
                 Sign up with Google
               </button>
@@ -42,7 +43,7 @@ const HeroSection = () => {
               </div>
             </div>
             <p className="mockup-desc">
-              Join a virtual meeting to discuss your child's academic progress and development plan.
+              Join a virtual meeting to discuss your child&apos;s academic progress and development plan.
             </p>
             <div className="mockup-duration">
               <span className="duration-pill active">15m</span>

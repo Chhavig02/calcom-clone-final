@@ -18,6 +18,7 @@ export const fetchBookings = async () => {
   return res.json();
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const createBooking = async (data: any) => {
   const res = await fetch(`${API_BASE_URL}/bookings`, {
     method: 'POST',

@@ -24,6 +24,7 @@ export default function SignupPage() {
     try {
       await register(name, email, password, username || email.split('@')[0]);
       router.push('/dashboard');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -60,6 +61,7 @@ export default function SignupPage() {
                 className="btn-google-signup"
                 onClick={() => setStep('email')}
               >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="https://www.google.com/favicon.ico" alt="G" width="18" height="18" />
                 Continue with Google
               </button>

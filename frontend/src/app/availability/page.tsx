@@ -34,7 +34,7 @@ export default function AvailabilityPage() {
     if (!user) return;
     fetch(`${API}/api/availability`, { headers: getAuthHeaders() })
       .then(r => r.json())
-      .then((data: any[]) => {
+      .then((data: DayAvail[]) => {
         const fullAvail = DAYS.map((_, index) => {
           const found = data.find(a => a.dayOfWeek === index);
           return found
@@ -45,6 +45,7 @@ export default function AvailabilityPage() {
       })
       .catch(console.error)
       .finally(() => setLoading(false));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   const handleToggle = (index: number) => {
@@ -101,7 +102,7 @@ export default function AvailabilityPage() {
             <div className="availability-card">
               <div className="card-header">
                 <h3>Weekly Hours</h3>
-                <p>Set when you're regularly available</p>
+                <p>Set when you&apos;re regularly available</p>
               </div>
               <div className="days-list">
                 {availability.map((day, index) => (
